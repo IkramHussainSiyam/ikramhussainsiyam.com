@@ -7,7 +7,7 @@ export default function HeroActions() {
 
   return (
     <a
-      href="https://ikramhussainsiyamresume2025.tiiny.site"
+      href="https://jmp.sh/IsXSw5KT"
       rel="noopener noreferrer"
       target="_blank"
     >
