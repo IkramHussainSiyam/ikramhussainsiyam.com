@@ -1,12 +1,11 @@
 import Section from "~/components/common/section";
 import { SectionBorderBG } from "~/components/layout/bordered-background";
 import useJsonData from "~/hooks/useJsonData";
-import "~/motion/breathing-text.css";
-import { type ISkillGroupData } from "~/types/data";
+import { type TSkillGroupData } from "~/types/data";
 import SkillsGroups from "./SkillsGroups";
 
 export default function SkillSection() {
-  const { skills } = useJsonData<ISkillGroupData>("skills");
+  const { skills } = useJsonData<TSkillGroupData>("skills");
 
   return (
     <Section id="skills" sectionTitle="skills">

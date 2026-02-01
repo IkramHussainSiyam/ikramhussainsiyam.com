@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "image": "/libris-thumb.png",
+      "link": "https://github.com/ikramhussainsiyam/libris",
+      "name": "Libris",
+      "summary": "The next-generation book platform",
+      "description": "A Full-stack book tracking platform to explore and share your favorite books with your friends. Discover top-rated and popular books through reviews and recommendations."
+    },
+    {
+      "image": "/theme-thumb.png",
+      "link": "https://github.com/ikramhussainsiyam/unified-glow-vscode-theme",
+      "name": "Unified Glow",
+      "summary": "All of your favorite themes in one place",
+      "description": "Enjoy your favorite themes and icons themes in one extension, no need to install multiple packages. Unified Glow has it all."
+    }
+  ]
+}

@@ -5,9 +5,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ["Limelight", "sans-serif"],
+        heading: ["Pixelify Sans", "sans-serif"],
         display: ["Instrument Serif", "serif"],
-        body: ["Ubuntu Sans", "sans-serif"],
+        body: ["Schibsted Grotesk", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

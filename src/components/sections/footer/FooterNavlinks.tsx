@@ -1,12 +1,12 @@
 import { Link } from "react-router";
 import useJsonData from "~/hooks/useJsonData";
-import type { INavLinksData } from "~/types/data";
+import type { TNavLinksData } from "~/types/data";
 
 export default function FooterNavlinks() {
-  const { navlinks } = useJsonData<INavLinksData>("navlinks");
+  const { navlinks } = useJsonData<TNavLinksData>("navlinks");
 
   return (
-    <ul className="flex items-center flex-wrap gap-y-3 sm:gap-0 justify-center">
+    <ul className="py-6 sm:pt-8 flex items-center flex-wrap gap-y-3 sm:gap-0 justify-center">
       {navlinks?.map((link) => (
         <Link
           key={link.id}

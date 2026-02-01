@@ -33,17 +33,12 @@ export default function Navbar() {
       className={cn(
         "w-full mx-auto border-b border-border/15 sticky inset-0 z-[999] transition-all duration-500",
         navStatus === "hide" && "-top-full",
-        navStatus === "style" && "w-[88%] top-3 bg-white/[0.97]",
-        navStatus === "show" && "top-0"
+        navStatus === "style" &&
+          "bg-background/90 backdrop-blur-xl border-transparent",
+        navStatus === "show" && "top-0",
       )}
     >
-      <Container
-        asChild
-        className={cn(
-          navStatus === "show" && "px-2 sm:section-padding-x",
-          navStatus === "style" && "mx-6"
-        )}
-      >
+      <Container asChild className={"px-2 sm:section-padding-x"}>
         <nav className="flex items-center justify-between h-20">
           <Logo />
           <NavbarSheet>

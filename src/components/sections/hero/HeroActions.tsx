@@ -7,11 +7,11 @@ export default function HeroActions() {
 
   return (
     <a
-      href="https://jmp.sh/IsXSw5KT"
+      href="https://resume-of-ikram-hussain-siyam.my.canva.site/"
       rel="noopener noreferrer"
       target="_blank"
     >
-      <Button className="flex slide-in-blurred-top text-xs w-36 h-10 sm:text-xl sm:w-56 sm:h-14">
+      <Button className="inline-flex slide-in-blurred-top text-xs w-36 h-10 sm:text-xl sm:w-56 sm:h-14">
         <span ref={textRef} className="pointer-events-none select-none">
           Grab My Resume
         </span>

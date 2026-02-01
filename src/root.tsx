@@ -22,7 +22,7 @@ export const links: Route.LinksFunction = () => [
   },
   {
     rel: "stylesheet",
-    href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Limelight&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap",
+    href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Pixelify+Sans:wght@400..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap",
   },
   { rel: "canonical", href: "https://ikramhussainsiyam.vercel.app/" },
 ];

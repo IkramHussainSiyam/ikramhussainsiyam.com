@@ -18,9 +18,9 @@ export default function Greetings() {
   }, []);
 
   return (
-    <h3 className="text-2xl md:text-5xl flex items-center gap-3 md:gap-6">
+    <h3 className="text-xl md:text-3xl flex items-center gap-5">
       <span className={cn("inline-block", animating && "wavy-rotation")}>
-        <MdWavingHand className="-rotate-90 text-2xl md:text-5xl" />
+        <MdWavingHand className="-rotate-90 text-xl md:text-3xl" />
       </span>
       <span>
         {greetings.split("").map((char, index) => (

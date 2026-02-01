@@ -16,8 +16,8 @@ export function NavbarSheet({ children }: { children: React.ReactNode }) {
       <SheetTrigger asChild>{children}</SheetTrigger>
       <SheetContent closeBtn={false} className="p-0 rounded-none bg-primary">
         <div className="flex items-center justify-between p-8 border-b border-secondary/65">
-          <SheetTitle className="font-display italic font-normal text-primary-foreground text-center text-4xl w-full tracking-wider">
-            Navigate
+          <SheetTitle className="font-heading uppercase font-normal text-primary-foreground text-4xl md:text-5xl lg:text-5xl w-full tracking-wider">
+            menu
           </SheetTitle>
           <SheetClose asChild>
             <Button size={"icon"} variant={"secondary"}>

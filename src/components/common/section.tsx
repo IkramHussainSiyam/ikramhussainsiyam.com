@@ -14,8 +14,8 @@ const Section = React.forwardRef<HTMLDivElement, ISectionProps>(
         {sectionTitle && (
           <h2
             className={cn(
-              "pt-6 pb-4 border-y uppercase border-border/15 text-5xl md:text-8xl font-heading text-center breathing-text",
-              titleClassName
+              "pt-6 pb-4 border-y uppercase border-border/15 text-5xl md:text-8xl font-heading font-medium text-center",
+              titleClassName,
             )}
           >
             {sectionTitle}
@@ -25,7 +25,7 @@ const Section = React.forwardRef<HTMLDivElement, ISectionProps>(
         {children}
       </section>
     );
-  }
+  },
 );
 
 export default Section;

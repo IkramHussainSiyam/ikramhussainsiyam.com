@@ -20,16 +20,6 @@
   }
 }
 
-::-webkit-scrollbar {
-  @apply w-2.5;
-}
-::-webkit-scrollbar-thumb {
-  @apply bg-secondary/80;
-}
-::-webkit-scrollbar-track {
-  @apply noise-bg;
-}
-
 @layer base {
   * {
     @apply border-border;

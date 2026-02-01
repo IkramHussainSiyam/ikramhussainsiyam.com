@@ -6,19 +6,27 @@
       "skills": ["html", "css", "javascript", "typescript"]
     },
     {
-      "groupHeading": "frameworks & libraries",
+      "groupHeading": "frontend",
       "groupSerial": 2,
-      "skills": ["react.js", "next.js", "redux.js", "tailwindcss"]
+      "skills": [
+        "react.js",
+        "tanstack start",
+        "react router",
+        "next.js",
+        "tanstack query",
+        "zustand",
+        "tailwindcss"
+      ]
     },
     {
-      "groupHeading": "Database & Auth",
+      "groupHeading": "backend",
       "groupSerial": 3,
-      "skills": ["mongodb", "prisma", "firebase", "better auth"]
+      "skills": ["supabase", "prisma", "node.js", "express.js"]
     },
     {
-      "groupHeading": "familiar with",
+      "groupHeading": "tooling",
       "groupSerial": 4,
-      "skills": ["react router", "zustand", "svelte", "solid.js"]
+      "skills": ["git", "gitHub", "linux"]
     }
   ]
 }

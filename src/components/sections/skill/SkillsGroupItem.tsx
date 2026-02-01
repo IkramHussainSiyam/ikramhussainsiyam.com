@@ -10,10 +10,10 @@ export default function SkillsGroupItem({
   return (
     <article className="section-padding-x ">
       <div className="flex items-center justify-between">
-        <h4 className="uppercase font-semibold text-xl md:text-3xl">
+        <h4 className="uppercase font-heading font-medium text-xl md:text-2xl">
           {groupHeading[0]}
         </h4>
-        <span className="font-semibold font-display italic tracking-widest text-lg text-primary/80">
+        <span className="font-heading font-medium text-xl">
           0{groupHeading[1]}
         </span>
       </div>

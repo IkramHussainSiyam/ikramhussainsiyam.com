@@ -12,7 +12,7 @@ export interface ButtonProps
 }
 
 const buttonVariants = cva(
-  "bg-primary text-primary-foreground uppercase font-medium border-r-[3px] border-b-[3px] border-primary-foreground shadow-[5px_5px_0] shadow-secondary/60 transition-all ease-out duration-100 relative flex items-center justify-center active:translate-x-1 active:translate-y-1 active:shadow-none",
+  "bg-primary text-primary-foreground border-r-[3px] border-b-[3px] border-primary-foreground shadow-[5px_5px_0] shadow-secondary/60 transition-all ease-out duration-100 relative flex items-center justify-center active:translate-x-1 active:translate-y-1 active:shadow-none font-heading font-medium uppercase",
   {
     variants: {
       variant: {
@@ -29,7 +29,7 @@ const buttonVariants = cva(
       size: "default",
       variant: "default",
     },
-  }
+  },
 );
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -43,20 +43,20 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       asChild,
       ...props
     },
-    ref
+    ref,
   ) => {
     const Comp = asChild ? Slot : "button";
 
     return (
-      <button
+      <Comp
         className={cn(buttonVariants({ size, variant }), className)}
         ref={ref}
         {...props}
       >
         {children}
-      </button>
+      </Comp>
     );
-  }
+  },
 );
 Button.displayName = "Button";
 
