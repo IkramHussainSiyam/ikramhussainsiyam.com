@@ -1,38 +1,57 @@
-const skills: TSkill[] = [
+const skillGroups: TSkillGroup[] = [
   {
-    groupHeading: "languages",
-    groupSerial: 1,
-    skills: ["html", "css", "javascript", "typescript"],
-  },
-  {
-    groupHeading: "frontend",
-    groupSerial: 2,
+    serial: 1,
+    title: "languages",
     skills: [
-      "react.js",
-      "tanstack start",
-      "react router",
-      "next.js",
-      "tanstack query",
-      "zustand",
-      "tailwindcss",
+      { icon: "", name: "html" },
+      { icon: "", name: "css" },
+      { icon: "", name: "javascript" },
+      { icon: "", name: "typescript" },
     ],
   },
   {
-    groupHeading: "backend",
-    groupSerial: 3,
-    skills: ["supabase", "prisma", "node.js", "express.js"],
+    serial: 2,
+    title: "frontend",
+    skills: [
+      { icon: "", name: "react.js" },
+      { icon: "", name: "tanstack start" },
+      { icon: "", name: "react router" },
+      { icon: "", name: "next.js" },
+      { icon: "", name: "tanstack query" },
+      { icon: "", name: "zustand" },
+      { icon: "", name: "tailwindcss" },
+    ],
   },
   {
-    groupHeading: "tooling",
-    groupSerial: 4,
-    skills: ["git", "gitHub", "linux"],
+    serial: 3,
+    title: "backend",
+    skills: [
+      { icon: "", name: "supabase" },
+      { icon: "", name: "prisma" },
+      { icon: "", name: "node.js" },
+      { icon: "", name: "express.js" },
+    ],
+  },
+  {
+    serial: 4,
+    title: "tooling",
+    skills: [
+      { icon: "", name: "git" },
+      { icon: "", name: "gitHub" },
+      { icon: "", name: "linux" },
+    ],
   },
 ];
 
-export default skills;
+export default skillGroups;
+
+export type TSkillGroup = {
+  serial: number;
+  title: string;
+  skills: TSkill[];
+};
 
 export type TSkill = {
-  groupHeading: string;
-  groupSerial: number;
-  skills: string[];
+  name: string;
+  icon: any;
 };

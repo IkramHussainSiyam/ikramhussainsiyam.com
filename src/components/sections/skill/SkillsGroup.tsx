@@ -1,26 +1,25 @@
+import type { TSkillGroup } from "~/data/skills";
 import Skill from "./Skill";
 
-export default function SkillsGroupItem({
-  skills,
-  groupHeading,
+export default function SkillsGroup({
+  skillGroup,
 }: {
-  skills: string[];
-  groupHeading: [string, number];
+  skillGroup: TSkillGroup;
 }) {
   return (
     <article className="section-padding-x ">
       <div className="flex items-center justify-between">
         <h4 className="uppercase font-heading font-medium text-xl md:text-2xl">
-          {groupHeading[0]}
+          {skillGroup.title}
         </h4>
         <span className="font-heading font-medium text-xl">
-          0{groupHeading[1]}
+          0{skillGroup.serial}
         </span>
       </div>
 
       <div className="my-7 grid grid-cols-2 gap-x-12 gap-y-4">
-        {skills.map((skill) => (
-          <Skill key={skill} name={skill} />
+        {skillGroup.skills.map((skill) => (
+          <Skill key={skill.name} skill={skill} />
         ))}
       </div>
     </article>
