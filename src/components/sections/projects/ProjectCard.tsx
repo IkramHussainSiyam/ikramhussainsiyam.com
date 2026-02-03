@@ -19,16 +19,19 @@ export default function ProjectCard({ className, project }: Props) {
       </figure>
 
       <hgroup className="flex-1">
-        <a rel="noopener noreferrer" href={project.link} target="_blank">
-          <h4 className="text-3xl sm:text-5xl lg:text-6xl font-heading uppercase font-medium mb-2 xl:mb-5 flex items-baseline gap-4 hover:underline">
+        <h4>
+          <a
+            rel="noopener noreferrer"
+            href={project.link}
+            target="_blank"
+            className="text-3xl sm:text-5xl lg:text-6xl font-heading uppercase font-medium mb-2 xl:mb-5 inline-flex items-center gap-2 sm:gap-3 hover:underline"
+          >
             <span>{project.name}</span>
-            <ArrowUpRight className="inline-block size-8 stroke-2 stroke-primary" />
-          </h4>
-        </a>
+            <ArrowUpRight className="inline-block size-6 sm:size-8 stroke-2 stroke-primary" />
+          </a>
+        </h4>
 
-        <h5 className="text-lg sm:text-2xl mb-1 xl:mb-2">
-          {project.summary}
-        </h5>
+        <h5 className="text-lg sm:text-2xl mb-1 xl:mb-2">{project.summary}</h5>
 
         <p className="text-sm md:text-lg">{project.description}</p>
       </hgroup>

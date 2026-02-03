@@ -19,11 +19,12 @@ export default function ExperienceCard({ className, experience }: Props) {
       </figure>
 
       <hgroup className="flex-1 grid sm:grid-cols-2 gap-y-1.5 items-center justify-between">
-        <h4 className="text-2xl font-heading uppercase font-medium inline-flex items-center gap-2 hover:underline">
+        <h4>
           <a
             rel="noopener noreferrer"
             href={experience.companyLink}
             target="_blank"
+            className="text-2xl font-heading uppercase font-medium inline-flex items-center gap-2 hover:underline"
           >
             <span>{experience.companyName}</span>
             <ArrowUpRight className="inline-block size-5 stroke-2 stroke-primary" />
