@@ -1,5 +1,9 @@
-import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { PiGithubLogoFill } from "react-icons/pi";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaLinkedinIn,
+  FaXTwitter,
+} from "react-icons/fa6";
 import Button from "~/components/ui/button";
 
 export default function SocialLink() {
@@ -19,9 +23,9 @@ export default function SocialLink() {
         href="https://github.com/IkramHussainSiyam/"
         target="_blank"
       >
-        <Button className="rounded-full w-32 gap-2.5 [&_svg]:size-5 [&_svg]:stroke-none [&_svg]:fill-primary-foreground capitalize">
+        <Button className="rounded-full w-32 gap-2 [&_svg]:size-5 [&_svg]:stroke-none [&_svg]:fill-primary-foreground font-body font-normal normal-case italic">
           GitHub
-          <PiGithubLogoFill />
+          <FaGithub />
         </Button>
       </a>
       <a

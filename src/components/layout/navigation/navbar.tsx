@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "w-full mx-auto border-b border-border/15 sticky inset-0 z-[999] transition-all duration-500",
+        "w-full mx-auto border-b border-border/15 sticky inset-0 z-[999]",
         navStatus === "hide" && "-top-full",
         navStatus === "style" &&
           "bg-background/90 backdrop-blur-xl border-transparent",
