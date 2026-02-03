@@ -1,0 +1,37 @@
+const experiences: TExperience[] = [
+  {
+    role: "Junior Software Developer",
+    duration: "Nov 2025 - Jan 2026",
+    companyName: "Bright Future Soft",
+    emloymentType: "Contract",
+    companyLogo: "/brightfuturesoft_logo.jpeg",
+    companyLink: "https://www.linkedin.com/company/brightfuturesoft/",
+  },
+  {
+    role: "Full-Stack Web Developer",
+    duration: "Aug 2025 - Oct 2025",
+    companyName: "TAF Technology",
+    emloymentType: "Internship",
+    companyLogo: "/taf_technology_logo.jpeg",
+    companyLink: "https://www.linkedin.com/company/taf-technology/",
+  },
+  {
+    role: "Frontend Web Developer",
+    duration: "Mar 2025 - Jul 2025",
+    companyName: "Decent IoT",
+    emloymentType: "Contract",
+    companyLogo: "/decent-iot_logo.jpg",
+    companyLink: "https://www.linkedin.com/company/decentiot/",
+  },
+];
+
+export default experiences;
+
+export type TExperience = {
+  companyLogo: string;
+  companyName: string;
+  companyLink: string;
+  emloymentType: "Full-time" | "Contract" | "Internship";
+  role: string;
+  duration: string;
+};

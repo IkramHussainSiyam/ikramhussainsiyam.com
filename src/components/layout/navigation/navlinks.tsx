@@ -1,10 +1,8 @@
 import { Link, useLocation } from "react-router";
-import useJsonData from "~/hooks/useJsonData";
+import navlinks from "~/data/navlinks";
 import { cn } from "~/lib/utils";
-import { type TNavLinksData } from "~/types/data";
 
 export default function Navlinks() {
-  const { navlinks } = useJsonData<TNavLinksData>("navlinks");
   const location = useLocation();
 
   const isMatch = (linkHref: string) =>

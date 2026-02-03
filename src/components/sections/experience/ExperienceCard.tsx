@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
+import type { TExperience } from "~/data/experiences";
 import { cn } from "~/lib/utils";
-import type { TExperience } from "~/types/data";
 
 export default function ExperienceCard({ className, experience }: Props) {
   return (

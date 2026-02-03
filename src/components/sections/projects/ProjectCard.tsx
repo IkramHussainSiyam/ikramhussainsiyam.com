@@ -1,6 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
+import type { TProject } from "~/data/projects";
 import { cn } from "~/lib/utils";
-import type { TProject } from "~/types/data";
 
 export default function ProjectCard({ className, project }: Props) {
   return (
